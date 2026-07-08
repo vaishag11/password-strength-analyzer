@@ -7,7 +7,7 @@ A lightweight, interactive web application that evaluates the strength of user p
 ## 🚀 Live Demo
 
 Check out the live app here:  
-👉 [https://vaishag11.github.io/password-strength-analyzer/](https://vaishag11.github.io/password-strength-analyzer/)
+👉(https://checkyourpassword.vercel.app/)
 
 ---
 
