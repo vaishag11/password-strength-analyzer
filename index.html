@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Password Strength Analyzer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="mist-bg"></div>
+
+  <header class="hero">
+    <p class="eyebrow">Security Tool</p>
+    <h1 class="hero-title">Password<br>Strength Analyzer<span class="dot">.</span></h1>
+    <p class="hero-sub"><strong>Real-time</strong> analysis with <strong>smart suggestions</strong> built in.</p>
+  </header>
+
+  <main class="grid">
+
+    <!-- LEFT: main analyzer card -->
+    <section class="card card-hero">
+      <div class="card-head">
+        <div>
+          <h2>Check your password</h2>
+          <p class="muted">Type below — nothing ever leaves your browser.</p>
+        </div>
+        <span class="glow-dot" id="glowDot"></span>
+      </div>
+
+      <div class="input-row">
+        <input type="password" id="passwordInput" placeholder="Enter a password..." autocomplete="off" spellcheck="false" />
+        <button id="toggleVisibility" aria-label="Toggle visibility">👁</button>
+      </div>
+
+      <div class="meter-track">
+        <div id="strengthBar"></div>
+      </div>
+      <div class="meter-label-row">
+        <span id="strengthLabel">Enter a password to begin</span>
+        <span id="scoreValue">0/100</span>
+      </div>
+
+      <button class="cta" id="ctaBtn">Get pro-level password</button>
+    </section>
+
+    <!-- MIDDLE: checklist form-style card -->
+    <section class="card card-form">
+      <h2>Requirements</h2>
+      <p class="muted">Every check below needs a green light.</p>
+
+      <ul id="checklist" class="checklist">
+        <li id="check-length"><span class="mark">✗</span>At least 8 characters</li>
+        <li id="check-upper"><span class="mark">✗</span>Contains uppercase letter</li>
+        <li id="check-lower"><span class="mark">✗</span>Contains lowercase letter</li>
+        <li id="check-number"><span class="mark">✗</span>Contains number</li>
+        <li id="check-special"><span class="mark">✗</span>Contains special character</li>
+        <li id="check-common"><span class="mark">✗</span>Not a commonly used password</li>
+      </ul>
+    </section>
+
+    <!-- RIGHT: notification-style suggestion card -->
+    <section class="card card-notif">
+      <div class="notif-top">
+        <div class="bell-badge">🔔</div>
+        <span class="arrow">↗</span>
+      </div>
+      <h2>Suggestions</h2>
+      <p class="muted" id="suggestionIntro">Stronger alternatives will appear here once you start typing.</p>
+
+      <div id="suggestionBox" class="hidden">
+        <ul id="suggestionList"></ul>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
