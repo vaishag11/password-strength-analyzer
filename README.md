@@ -7,7 +7,7 @@ A lightweight, interactive web application that evaluates the strength of user p
 ## 🚀 Live Demo
 
 Check out the live app here:  
-👉(https://checkyourpassword.vercel.app/)
+👉https://checkyourpassword.vercel.app/
 
 ---
 
