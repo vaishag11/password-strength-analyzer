@@ -1,17 +1,17 @@
-# 🔒 Password Strength Analyzer
+# Password Strength Analyzer
 
 A lightweight, interactive web application that evaluates the strength of user passwords in real time. It provides visual feedback and recommendations to help users create stronger, more secure passwords.
 
 ---
 
-## 🚀 Live Demo
+## Live Demo
 
 Check out the live app here:  
-👉https://checkyourpassword.vercel.app/
+👉 https://checkyourpassword.vercel.app/
 
 ---
 
-## ✨ Features
+## Features
 
 * **Real-time Evaluation:** Instantly analyzes passwords as you type.
 * **Visual Strength Indicator:** Color-coded progress bar (Weak, Medium, Strong).
@@ -20,7 +20,7 @@ Check out the live app here:
 
 ---
 
-## 🛠️ Built With
+## Built With
 
 * **HTML5** - Structure
 * **CSS3** - Styling & Layout
